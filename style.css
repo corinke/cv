@@ -1,11 +1,11 @@
 
 .grid-head{ 
   grid-area: header; 
+  width: 100%;
 
 }
 .grid-menu { 
   grid-area: menu; 
-  max-width="100%";
 }
 .grid-we { 
   grid-area: we; 
