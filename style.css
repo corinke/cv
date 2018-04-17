@@ -5,11 +5,10 @@
 }
 .grid-menu { 
   grid-area: menu; 
-
+  max-width="100%";
 }
 .grid-we { 
   grid-area: we; 
-  padding-left: 10px;
 
 }
 .grid-edu { 
@@ -79,5 +78,8 @@ border-color: #BDD4DE;
 padding: 5px 0px 8px 35px;
 text-align: left;
 
+}
+.prof {
+text-align: center;
 }
 </style>
