@@ -1,39 +1,68 @@
 .grid-head{ 
   grid-area: header; 
-
+  border-top: 5px solid #3F5765;
+    border-bottom: 5px solid #3F5765;
+  padding-bottom: 5px;
+    background-color: rgba(250, 250, 250, 0.9);
 }
 .grid-menu { 
   grid-area: menu; 
   display: inline-block;
-  max-width: 600px;
+  max-width: 700px;
+  border: 5px solid #BDD4DE;
+  background-color: rgba(250, 250, 250, 0.9);
 }
 .grid-we { 
   grid-area: we; 
   display: inline-block;
-
+  border: 5px solid #BDD4DE;
+    background-color: rgba(250, 250, 250, 0.9);
 }
 .grid-edu { 
   grid-area: edu; 
   display: inline-block;
+  border: 5px solid #BDD4DE;
+    background-color: rgba(250, 250, 250, 0.9);
 }
 .grid-foot { 
   grid-area: footer;
-
+  border: 5px solid #BDD4DE;
+    background-color: rgba(250, 250, 250, 0.9);
 }
+
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header header header'
+
     'we we we we we menu'
-    'edu edu edu edu edu edu'
-    'footer footer footer footer footer footer';
+    'edu edu edu edu edu blank'
+    'footer footer footer footer footer blank';
   grid-gap: 15px;
-  background-color: #BDD4DE;
   padding: 15px;
+  background-color: #BDD4DE;
+}
+.grid-black{
+grid-area: blank;
+background-color: #BDD4DE;
+display: inline-block;
+}
+
+.wrapper{
+padding: 1em 2em 2em 2em;
+  display: grid;
+   background-color: #BDD4DE;
+}
+
+@media only screen and (min-width: 1400px){
+.wrapper{
+padding: 1em 4em 2em 4em;
+
+}
+
 }
 
 /* small screens */
-@media only screen and (max-width: 600px)   {
+@media only screen and (max-width: 700px)   {
  .grid-container {
     display: grid;
     grid-template-areas:
@@ -43,10 +72,14 @@
      'edu'
      'footer';
   grid-gap: 10px;
-  background-color: #BDD4DE;
-  padding: 10px;
+  padding: 5px;
   max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
   }
+ .wrapper{
+padding: 1em;
+ } 
 }
 /* extra small screens */
 @media only screen and (max-width: 330px)   {
@@ -71,10 +104,13 @@ max-width: 85%;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.9);
   font-family: 'Lato', Sans-Serif;
   padding: 10px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.grid-blank > div{
+background-color: #BDD4DE;
 
 }
 .grid-we > div {
@@ -175,4 +211,28 @@ nav > a:active {
 li{
 padding: 5px;  
 
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250, 250, 250, 0.9);
+    z-index: 2;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border-top: 5px solid #BDD4DE;
+    border-bottom: 5px solid #BDD4DE;
+    color: #FF530D;
 }
