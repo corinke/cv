@@ -50,6 +50,13 @@
  text-align: center;
 }
 
+@media only screen and (max-width: 600px)   {
+  .grid-firstyr, .grid-secondyr, .grid-thirdyr{
+grid-column: 1;
+grid-row: 2;
+  }
+}
+
 .grid-foot { 
   grid-area: footer;
   border: 5px solid #BDD4DE;
