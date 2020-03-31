@@ -51,10 +51,18 @@
 }
 
 @media only screen and (max-width: 600px)   {
-  .grid-firstyr, .grid-secondyr, .grid-thirdyr{
-grid-column: 1/4;
-grid-row: 2/4;
+  .grid-firstyr{
+grid-column: 1/3;
+grid-row: 2;
   }
+.grid-secondyr{
+  grid-column: 1/3;
+  grid-row: 3;
+}
+.grid-thirdyr{
+  grid-column: 1/3;
+  grid-row: 4;
+}
 }
 
 .grid-foot { 
