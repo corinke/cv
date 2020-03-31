@@ -8,5 +8,7 @@ The aim is to create all assets from scratch, and not to use out of the box plug
 As this will always be a work in progress, heres a to-do list:
 
 add accessibility for screen readers
+
 JS module for the menu items to retain everything on one page
+
 further adapt responsive screens on the page
