@@ -20,27 +20,28 @@
 }
 .grid-edu { 
   grid-area: edu; 
-  display: inline-block;
+  display: grid;
   border: 5px solid #BDD4DE;
   background-color: rgba(250, 250, 250, 0.9);
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 .grid-firstyr{
  grid-column: 1;
- grid-row: 1;
+ grid-row: 2;
  background-color: #fff;
  text-align: center;
 }
 .grid-secondyr{
  grid-column: 2;
- grid-row: 1;
+ grid-row: 2;
  background-color: #fff;
  text-align: center;
 }
 .grid-thirdyr{
  grid-column: 3;
- grid-row: 1;
+ grid-row: 2;
  background-color: #fff;
  text-align: center;
 }
