@@ -36,18 +36,21 @@
  grid-row: 2;
  background-color: #fff;
  text-align: center;
+ padding-bottom: 10px;
 }
 .grid-secondyr{
  grid-column: 2;
  grid-row: 2;
  background-color: #fff;
  text-align: center;
+ padding-bottom: 10px;
 }
 .grid-thirdyr{
  grid-column: 3;
  grid-row: 2;
  background-color: #fff;
  text-align: center;
+ padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 600px)   {
@@ -183,7 +186,6 @@ font-weight: bold;
 h2{
 font-family: 'Raleway', Sans-Serif;
   color: #3F5765;
-text-align: center;
 font-weight: bold;
 font-size: 1.4em;
 }
