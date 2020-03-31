@@ -170,12 +170,12 @@ font-family: 'Raleway', Sans-Serif;
   color: #3F5765;
 text-align: center;
 font-weight: bold;
-font-size: 5em;
+font-size: 2.7em;
 }
 
 h4{
    font-family: 'Lato', Sans-Serif;
-  font-size: 3em;
+  font-size: 2em;
   color: #FF530D;
 }
 
@@ -225,6 +225,10 @@ width: 60%;
 .link{
  color: #FF530D;
 text-decoration: none;
+}
+.contactlinks{
+  color: #333;
+  text-decoration: none;
 }
 
 
