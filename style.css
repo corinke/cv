@@ -26,6 +26,10 @@
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.grid-edu-content{
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
 
 .grid-firstyr{
  grid-column: 1;
