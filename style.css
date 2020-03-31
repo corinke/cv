@@ -14,7 +14,7 @@
 }
 .grid-we { 
   grid-area: we; 
-  display: inline-block;
+  display: table;
   border: 5px solid #BDD4DE;
     background-color: rgba(250, 250, 250, 0.9);
 }
