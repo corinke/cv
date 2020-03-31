@@ -166,8 +166,16 @@ font-weight: bold;
 }
 
 h2{
+font-family: 'Raleway', Sans-Serif;
+  color: #3F5765;
+text-align: center;
+font-weight: bold;
+font-size: 5em;
+}
+
+h4{
    font-family: 'Lato', Sans-Serif;
-  font-size: 2em;
+  font-size: 3em;
   color: #FF530D;
 }
 
