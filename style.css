@@ -29,17 +29,20 @@
 .grid-firstyr{
  grid-column: 1;
  grid-row: 1;
- background-color: #a9cede;
+ background-color: #fff;
+ text-align: center;
 }
 .grid-secondyr{
- grid-column: 1;
+ grid-column: 2;
  grid-row: 1;
- background-color: #a9cede;
+ background-color: #fff;
+ text-align: center;
 }
 .grid-thirdyr{
- grid-column: 1;
+ grid-column: 3;
  grid-row: 1;
- background-color: #a9cede;
+ background-color: #fff;
+ text-align: center;
 }
 
 .grid-foot { 
