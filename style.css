@@ -228,8 +228,8 @@ font-weight: bold;
 hr{
 width: 80%;
 margin-top: 20px;
-border-color: #BDD4DE;
-background-color: none;
+border-top-color: #BDD4DE;
+background-color: rgba(250, 250, 250, 0.9);
 
 }
 
