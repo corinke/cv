@@ -14,7 +14,7 @@
 }
 .grid-we { 
   grid-area: we; 
-  display: table;
+  display: grid;
   border: 5px solid #BDD4DE;
     background-color: rgba(250, 250, 250, 0.9);
 }
@@ -229,6 +229,7 @@ hr{
 width: 80%;
 margin-top: 20px;
 border-color: #BDD4DE;
+background-color: none;
 
 }
 
