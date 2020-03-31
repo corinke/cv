@@ -27,7 +27,7 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 .grid-edu-content{
-  grid-column: 1 / 3;
+  grid-column: 1 / 4;
   grid-row: 1;
 }
 
@@ -165,6 +165,12 @@ text-align: center;
 font-weight: bold;
 }
 
+h2{
+   font-family: 'Lato', Sans-Serif;
+  font-size: 2em;
+  color: #FF530D;
+}
+
 h3{
   font-family: 'Lato', Sans-Serif;
   font-size: 1em;
@@ -208,10 +214,12 @@ text-align: center;
 width: 60%;
 }
 
-a:link{
+.link{
  color: #FF530D;
-
+text-decoration: none;
 }
+
+
 
 nav{
  color: #3F5765;
