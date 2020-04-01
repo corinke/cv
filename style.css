@@ -215,6 +215,8 @@ p{
   font-size: 1em;
 }
 
+
+
 .deets{
   font-family: 'Lato', Sans-Serif;
   font-size: 1em;
@@ -322,13 +324,13 @@ padding: 5px;
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {left:-300px; opacity:0} 
-  to {left:0; opacity:1}
+  from {top: :-300px; opacity:0} 
+  to {top:0; opacity:1}
 }
 
 @keyframes animatetop {
-  from {left:-300px; opacity:0}
-  to {left:0; opacity:1}
+  from {bottom:-300px; opacity:0}
+  to {bottom:0; opacity:1}
 }
 
 /* The Close Button */
