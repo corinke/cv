@@ -1,9 +1,10 @@
+/*grid styling */
 .grid-head{ 
   grid-area: header; 
   border-top: 5px solid #3F5765;
     border-bottom: 5px solid #3F5765;
   padding-bottom: 5px;
-    background-color: rgba(250, 250, 250, 0.9);
+    background-color: rgba(250, 250, 250, 0.9); 
 }
 .grid-menu { 
   grid-area: menu; 
@@ -166,6 +167,10 @@ padding-left: 10px;
 padding-left: 10px;	
 }
 
+
+
+/*icons and text */
+
 .fas, .fab{
  font-size: 1.5em;
  color: #2B3A42;
@@ -185,15 +190,9 @@ font-weight: bold;
 
 h2{
 font-family: 'Raleway', Sans-Serif;
-  color: #3F5765;
+color: #3F5765;
 font-weight: bold;
 font-size: 1.4em;
-}
-
-h4{
-   font-family: 'Lato', Sans-Serif;
-  font-size: 1em;
-  color: #FF530D;
 }
 
 h3{
@@ -204,9 +203,12 @@ h3{
   padding-left: 5px;
 }
 
-.prof img{
-
+h4{
+   font-family: 'Lato', Sans-Serif;
+  font-size: 1em;
+  color: #FF530D;
 }
+
 
 .deets{
   font-family: 'Lato', Sans-Serif;
@@ -252,7 +254,7 @@ text-decoration: none;
   text-decoration: none;
 }
 
-
+/*navigation bar */
 
 nav{
  color: #3F5765;
@@ -281,6 +283,82 @@ li{
 padding: 5px;  
 
 }
+
+/* modal for nav buttons */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 15px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {left:-300px; opacity:0} 
+  to {left:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {left:-300px; opacity:0}
+  to {left:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #304269;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #91BED4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-body {
+padding: 2px 16px;
+opacity: 0.9;
+
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #fff;
+  color: #F26101;
+  
+}
+
+
+
+
+
+/*overlay for in progress, not used anymore */
 
 #overlay {
     position: fixed;
