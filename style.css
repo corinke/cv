@@ -286,7 +286,7 @@ padding: 5px;
 
 /* modal for nav buttons */
 
-.modal {
+.modal{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -301,7 +301,7 @@ padding: 5px;
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content{
   position: relative;
   background-color: #fff;
   margin: auto;
@@ -327,7 +327,7 @@ padding: 5px;
 }
 
 /* The Close Button */
-.close-btn {
+.close-btn{
   color: #304269;
   float: right;
   font-size: 28px;
@@ -335,14 +335,14 @@ padding: 5px;
 }
 
 .close-btn:hover,
-.close-btn:focus {
+.close-btn:focus{
   color: #91BED4;
   text-decoration: none;
   cursor: pointer;
 }
 
 
-.modal-header {
+.modal-header{
   padding: 2px 16px;
   background-color: #fff;
   color: #F26101;
