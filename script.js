@@ -1,4 +1,4 @@
-<script>
+
 let modalBtn = document.getElementById("modal-btn")
 let modal = document.querySelector(".modal")
 let closeBtn = document.querySelector(".close-btn")
@@ -13,4 +13,4 @@ window.onclick = function(e){
     modal.style.display = "none"
   }
 }
-</script>
+
