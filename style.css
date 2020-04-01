@@ -327,25 +327,20 @@ padding: 5px;
 }
 
 /* The Close Button */
-.close {
+.close-btn {
   color: #304269;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close-btn:hover,
+.close-btn:focus {
   color: #91BED4;
   text-decoration: none;
   cursor: pointer;
 }
 
-.modal-body {
-padding: 2px 16px;
-opacity: 0.9;
-
-}
 
 .modal-header {
   padding: 2px 16px;
@@ -353,8 +348,6 @@ opacity: 0.9;
   color: #F26101;
   
 }
-
-
 
 
 
