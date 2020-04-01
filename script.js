@@ -1,3 +1,4 @@
+<script>
 var modal = document.getElementById("achievementsAndQualifications");
 
 
@@ -18,3 +19,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+</script>
