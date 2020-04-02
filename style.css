@@ -190,7 +190,7 @@ font-weight: bold;
 
 h2{
 font-family: 'Raleway', Sans-Serif;
-color: #3F5765;
+color: #2B3A42;
 font-weight: bold;
 font-size: 1.4em;
 }
@@ -211,7 +211,7 @@ h4{
 
 p{
   font-family: 'Lato', Sans-Serif;
-  color: #304269;
+  color: #2B3A42;
   font-size: 1em;
 }
 
@@ -294,17 +294,17 @@ padding: 5px;
 /* modal for nav buttons */
 
 .modal{
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 50px; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content */
@@ -320,8 +320,17 @@ padding: 5px;
   animation-name: animatetop;
   animation-duration: 0.4s;
   border-radius: 15px;
+  
 }
 
+.modal-content > img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid #304269;
+  width: 70%;
+
+}
 /* Add Animation */
 @-webkit-keyframes animatetop {
   from {top: :-300px; opacity:0} 
@@ -329,8 +338,8 @@ padding: 5px;
 }
 
 @keyframes animatetop {
-  from {bottom:-300px; opacity:0}
-  to {bottom:0; opacity:1}
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }
 
 /* The Close Button */
