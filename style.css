@@ -312,7 +312,7 @@ padding: 5px;
   position: relative;
   background-color: #fff;
   margin: auto;
-  padding: 0;
+  padding-bottom: 50px;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-animation-name: animatetop;
@@ -343,16 +343,17 @@ padding: 5px;
 }
 
 /* The Close Button */
-.close-btn{
+.close-btn > a{
   color: #304269;
   float: right;
   font-size: 40px;
   font-weight: bold;
+  text-decoration: none;
 }
 
-.close-btn:hover,
-.close-btn:focus{
-  color: #91BED4;
+.close-btn:hover > a,
+.close-btn:focus > a{
+  color: #91BED4 ;
   text-decoration: none;
   cursor: pointer;
 }
