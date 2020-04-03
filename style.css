@@ -343,7 +343,7 @@ padding: 5px;
 }
 
 /* The Close Button */
-.close-btn, .close-btnA > a{
+.close-btn > a, .close-btnA > a{
   color: #304269;
   float: right;
   font-size: 40px;
