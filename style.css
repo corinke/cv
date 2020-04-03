@@ -297,7 +297,7 @@ padding: 5px;
   display: none; 
   position: fixed; 
   z-index: 1; 
-  margin-top: 50px; 
+  padding-top: 50px; 
   left: 0;
   top: 0;
   width: 100%; 
@@ -328,7 +328,7 @@ padding: 5px;
   margin-right: auto;
   margin-left: auto;
   border: 2px solid #304269;
-  width: 70%;
+  width: 50%;
 
 }
 /* Add Animation */
