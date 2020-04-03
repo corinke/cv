@@ -293,7 +293,7 @@ padding: 5px;
 
 /* modal for nav buttons */
 
-.modal{
+.modal, .modalA{
   display: none; 
   position: fixed; 
   z-index: 1; 
@@ -343,7 +343,7 @@ padding: 5px;
 }
 
 /* The Close Button */
-.close-btn > a{
+.close-btn, .close-btnA > a{
   color: #304269;
   float: right;
   font-size: 40px;
@@ -351,8 +351,8 @@ padding: 5px;
   text-decoration: none;
 }
 
-.close-btn:hover > a,
-.close-btn:focus > a{
+.close-btn:hover, .close_btnA:hover > a,
+.close-btn:focus, .close-btnA:focus > a{
   color: #91BED4 ;
   text-decoration: none;
   cursor: pointer;
