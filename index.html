@@ -1,234 +1,443 @@
-<html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="keywords" content="Corin Kearney,Corin,Kearney,CV,resume,Salesforce,Marketing Cloud,Pardot,Marketing,Technology,HTML,CSS,Anglia Ruskin University,Anglia Ruskin">
-<meta name="description" content="A CV/Resume for Corin Kearney to expand on paper CV. This page will showcase my skills, achievements and qualifications and present them using my web design skills.">
-<meta name="author" content="Corin Kearney">
-<title>Corin Kearney</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+/*grid styling */
+.grid-head{ 
+  grid-area: header; 
+  border-top: 5px solid #3F5765;
+    border-bottom: 5px solid #3F5765;
+  padding-bottom: 5px;
+    background-color: rgba(250, 250, 250, 0.9); 
+}
+.grid-menu { 
+  grid-area: menu; 
+  display: table;
+  max-width: 700px;
+  border: 5px solid #BDD4DE;
+  background-color: rgba(250, 250, 250, 0.9);
+}
+.grid-we { 
+  grid-area: we; 
+  display: grid;
+  border: 5px solid #BDD4DE;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+.grid-edu { 
+  grid-area: edu; 
+  display: grid;
+  border: 5px solid #BDD4DE;
+  background-color: rgba(250, 250, 250, 0.9);
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-edu-content{
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.grid-edu-college{
+  grid-column: 1 / 4;
+  grid-row: 3;
+}
 
-</head>
-<body>
-	<div class="grid-head">
-    <h1 class="title">Corin Kearney</h1>
-    <h3 class="deets"><a href="mailto:corin.kearney95@gmail.com" class="link">corin.kearney95@gmail.com</a> - (UK)+44 7530 138 666 - (AUS) +61 426 675 943</h3>
-<nav><a id="modal-btn" href="#achievementsAndQualifications">Awards & Qualifications</a><a id="modal-btnA" href="#projects">Projects</a><a href="Aussie Corin Kearney CV 2020 (2).pdf" target="_blank">View a PDF version of my CV</a></nav>
-  </div>
-  <div class="wrapper">
-  	
-  <div class="grid-container">
+.grid-firstyr{
+ grid-column: 1;
+ grid-row: 2;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+}
+.grid-secondyr{
+ grid-column: 2;
+ grid-row: 2;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+}
+.grid-thirdyr{
+ grid-column: 3;
+ grid-row: 2;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+}
+.grid-cfirst{
+ grid-column: 1;
+ grid-row: 4;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.grid-csecond{
+ grid-column: 2;
+ grid-row: 4;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.grid-cthird{
+ grid-column: 3;
+ grid-row: 4;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
 
-  <div class="grid-menu">
-     <h1>Profile</h1> 
-     <div class="prof"><img class="prof" src="profile.png" alt="Corin Kearney" /></div>
-     <div class="skill-list"><p>I am a multiskilled, fast-learning creative Marketing  Automation Specialist looking for a fulfilling and  exciting role. I can offer a well rounded knowledge of  marketing automation platforms, multimedia softwares and web development languages, along with great attention to detail and organisational skills. I have proven to be an exceptional asset to my teams in previous roles.  <br /><br />
+@media only screen and (max-width: 600px)   {
+  .grid-firstyr{
+grid-column: 1/4;
+grid-row: 2;
+  }
+.grid-secondyr{
+  grid-column: 1/4;
+  grid-row: 3;
+}
+.grid-thirdyr{
+  grid-column: 1/4;
+  grid-row: 4;
+}
+  .grid-cfirst{
+grid-column: 1/4;
+grid-row: 6;
+  }
+.grid-csecond{
+  grid-column: 1/4;
+  grid-row: 7;
+}
+.grid-cthird{
+  grid-column: 1/4;
+  grid-row: 8;
+}
+  .grid-edu-content{
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.grid-edu-college{
+  grid-column: 1 / 4;
+  grid-row: 5;
+}
+}
 
-     I am currently residing in Australia and I hold a Working Holiday visa (Subclass:417). I'm willing to relocate anywhere in Australia for the right role.
-<br /><br />
-     This site is a personal project to learn and develop my current web design and web development skills. <a href="https://github.com/corinke/cv" target="_blank" class="link">You can view my progress and previous versions of this site on GitHub</a>.
-<br /><br />
-     In my free time I enjoy travelling, listening to music and creating playlists on Spotify for every mood. Friends have referred to me as the human jukebox! <br /><br />
+.grid-foot { 
+  grid-area: footer;
+  border: 5px solid #BDD4DE;
+  background-color: rgba(250, 250, 250, 0.9);
+}
 
-     <a href="Aussie Corin Kearney CV 2020 (2).pdf" target="_blank" class="link">View a PDF version of my CV to download</a>.
+.grid-container {
+  display: grid;
+  grid-template-areas:
 
-     </p></div>
-    <div>
-     <hr noshade=""> 
-     <h1>Skills</h1>      
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-cloud"></i>Outstanding knowledge of Salesforce Marketing Cloud and Salesforce Pardot.
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-cloud"></i>Salesforce Pardot admin user.
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-code"></i>Great knowledge of front end web development languages HTML and CSS. 
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-images"></i>Intermediate knowledge of Adobe Photoshop.
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-video"></i>Good knowledge of video production and editing with Adobe Premiere Pro.
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-laptop"></i>PC and Mac literate. 
-    </div>
-    <div class="skill-list">
-      <i class="fab fa-microsoft"></i>Confident in using Microsoft Office programs.
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-database"></i>Fundamental knowledge of data bases and SQL.
-    </div>
-    <div class="skill-list">
-      <i class="fas fa-car"></i>Full, clean UK driving licence.
-    </div>
+    'we we we we we menu'
+    'edu edu edu edu edu blank'
+    'footer footer footer footer footer blank';
+  grid-gap: 15px;
+  padding: 15px;
+  background-color: #BDD4DE;
+  justify-content: center;
+}
+.grid-black{
+grid-area: blank;
+background-color: #BDD4DE;
+display: inline-block;
+}
 
-  </div>
-  <div class="grid-we">
-  <h1>Work Experience</h1>
+.wrapper{
+padding: 1em 2em 2em 2em;
+  display: grid;
+   background-color: #BDD4DE;
+}
+
+@media only screen and (min-width: 1400px){
+.wrapper{
+padding: 1em 4em 2em 4em;
+
+}
+
+}
+
+/* small screens */
+@media only screen and (max-width: 700px)   {
+ .grid-container {
+    display: grid;
+    grid-template-areas:
+     'header'
+     'menu'
+     'we'
+     'edu'
+     'footer';
+  grid-gap: 10px;
+  padding: 5px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+ .wrapper{
+padding: 1em;
+ } 
+}
+/* extra small screens */
+@media only screen and (max-width: 330px)   {
+ .grid-container {
+    display: grid;
+    grid-template-areas:
+     'header'
+     'menu'
+     'we'
+     'edu'
+     'footer';
+  grid-gap: 10px;
+  }
+  .grid-container > div {
+max-width: 93%;
+
+  }
+  img{
+max-width: 85%;
+
+  }
+}
+
+.grid-container > div {
+  font-family: 'Lato', Sans-Serif;
+  padding: 10px;
+
+
+}
+.grid-blank > div{
+background-color: #BDD4DE;
+
+}
+.grid-we > div {
+padding-left: 10px;
+}
+
+.grid-edu > div {
+padding-left: 10px;	
+}
+
+
+
+/*icons and text */
+
+.fas, .fab{
+ font-size: 1.5em;
+ color: #2B3A42;
+ text-align: left;
+ padding-right: 10px;
+}
+.fa-calendar-alt{
+color: #FF530D;
+
+}
+h1{
+font-family: 'Raleway', Sans-Serif;
+color: #FF530D;
+text-align: center;
+font-weight: bold;
+}
+
+h2{
+font-family: 'Raleway', Sans-Serif;
+color: #2B3A42;
+font-weight: bold;
+font-size: 1.4em;
+}
+
+h3{
+  font-family: 'Lato', Sans-Serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #FF530D;
+  padding-left: 5px;
+}
+
+h4{
+   font-family: 'Lato', Sans-Serif;
+  font-size: 1em;
+  color: #FF530D;
+}
+
+p{
+  font-family: 'Lato', Sans-Serif;
+  color: #2B3A42;
+  font-size: 1em;
+}
+
+
+
+.deets{
+  font-family: 'Lato', Sans-Serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #FF530D;
+  text-align: center;
+
+}
+
+.title{
+font-family: 'Raleway', Sans-Serif;
+color: #3F5765;
+text-align: center;
+font-weight: bold;
+
+}
+
+hr{
+width: 80%;
+margin-top: 20px;
+border-top-color: #BDD4DE;
+background-color: rgba(250, 250, 250, 0.9);
+
+}
+
+.skill-list{
+padding: 15px 0px 8px 25px;
+text-align: left;
+
+}
+
+.prof {
+text-align: center;
+}
+
+.link{
+ color: #FF530D;
+text-decoration: none;
+}
+.contactlinks{
+  color: #333;
+  text-decoration: none;
+}
+
+/*navigation bar */
+
+nav{
+ color: #3F5765;
+ font-family: 'Raleway', Sans-Serif;
+ font-size: 1.2em;
+ text-align: center;
+ cursor: hand;
+ padding: 2px 5px 0px 5px;
+}
+nav > a:link {
+ color: #3F5765;
+  padding: 2px 10px 0px 10px;
+}
+
+nav > a:visited {
+ color: #3F5765;
+}
+nav > a:hover {
+ color: #FF530D;
+}
+nav > a:active {
+ color: #3F5765;
+}
+
+li{
+padding: 5px;  
+
+}
+
+/* modal for nav buttons */
+
+.modal, .modalA{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 50px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content{
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding-bottom: 50px;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 15px;
   
-   <h2><i class="fas fa-building"></i>Taylor & Francis Group - Marketing Automation Specialist </h2>
-   <h3><i class="fas fa-calendar-alt"></i>December 2018 - December 2019</h3>
-    
-<ul>
-<li>Developed bespoke functionalities​ for the marketing department, such as rolling out ​Formstack​ (progressive profiling data capture forms), to suit the requirements from the marketing department and the wider business. This included working on creative assets using ​web coding​ and Photoshop, ​planning and developing the data sync between 3 systems and ​training ​the marketing department through interactive webinars and in-person tutorials.  </li>
-<li>Successfully ​trained new starters ​ and created supplementary training materials with my ​outstanding knowledge of Marketing Cloud, Pardot​ and the company’s data structures. Included flying abroad to ​conduct in-person training for overseas colleagues​ which received ​great feedback​.  </li>
-<li>Consulted​,  ​planned​, built and​ tested complex marketing automation programs ​with senior members of the marketing departments for large, complex marketing campaigns. This was achieved through my knowledge in cross platform marketing systems, their functions and limitations. </li>
-<li>Worked in an ​agile ​way to complete ​solo ​tasks as part of larger projects, along  with ​working collaboratively​ with the team.  </li>
-<li>Maintained​ ​existing marketing automation programs​ after they had been launched to reduce any system errors and make changes where appropriate. </li>
-</ul>
+}
 
+.modal-img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid #304269;
+  width: 50%;
+
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top: :-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close-btn > a, .close-btnA > a{
+  color: #304269;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.close-btn:hover, .close_btnA:hover > a,
+.close-btn:focus, .close-btnA:focus > a{
+  color: #91BED4 ;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.modal-header{
+  padding: 2px 16px;
+  background-color: #fff;
+  color: #F26101;
   
-  
-   <h2><i class="fas fa-building"></i>Taylor & Francis Group - Marketing Support Coordinator </h2>
-   <h3><i class="fas fa-calendar-alt"></i>August 2017 - December 2018</h3>
-
-<ul>
-<li>Built and maintained a company wide reputation as a reliable resource by efficiently fixing technical issues and promoting best practices for Marketing Cloud.</li>
-<li>Successfully trained new starters in marketing automation platforms and created training materials with my outstanding knowledge of Marketing Cloud and the company’s data structures.</li>
-<li>Creatively built websites for internal communications to represent the team using HTML, CSS and Bootstrap.</li>
-<li>Prepared, scripted, produced and edited training videos about Marketing Cloud for internal distribution.</li>
-<li>Effectively worked in teams across multiple departments to develop and roll out marketing automation platforms.</li>
-</ul>
+}
 
 
 
+/*overlay for in progress, not used anymore */
 
- 	<h2><i class="fas fa-building"></i>Volunteer Video Journalist - That's Oxfordshire TV </h2>
-   <h3><i class="fas fa-calendar-alt"></i>July 2016</h3>
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250, 250, 250, 0.9);
+    z-index: 2;
+}
 
- 		<ul>
- 			<li>Utilised research skills through discovering local news stories using complex searches
-on search engines and local news websites.</li>
-<li>Successfully organised video shoots in the studio and on location with clients. This was made possible through organised phone communication, and informed online communication.</li>
-<li>Independently produced videos by working to tight deadlines. The productions were broadcast on television, so absolute precision and ability to work under pressure were key. This included writing interview scripts and recording voice overs.</li>
-<li>Competently recorded news stories on location using industry standard equipment. This required creative flair to execute cutaway shots. Additionally, I also conducted interviews behind the camera, which required a high level of concentration and multi-tasking.</li>
-<li>Creatively used Adobe Premier Pro to edit video clips. This was often performed to an extremely tight deadline for broadcast on the same day.</li>
- 		</ul>
-
-  </div>  
-  <div class="grid-edu">
-    <div class="grid-edu-content">
-  <h1>Education</h1>
-  <h2><i class="fas fa-graduation-cap"></i><em>BA (Hons) First Class</em> degree in <em>Media Studies</em><br /><small>  Anglia Ruskin University</small></h2>
-  <h3><i class="fas fa-calendar-alt"></i>September 2014 - July 2017</h3>
-   </div>
-  <div class="grid-firstyr">
-    <h3>Year 1 - 7 Modules</h3><br />
-    Analysing Language and Image (<em>15 Credits</em>)<br />
-Introduction to Video 1 (<em>15 Credits</em>)<br />
-Introduction to Radio (<em>15 Credits</em>)<br />
-Print Media (<em>15 Credits</em>)<br />
-The Networked Image (<em>15 Credits</em>)<br />
-Media and Technology (<em>15 Credits</em>)<br />
-Media, Culture and Society (<em>30 Credits)</em>
-  </div>
-  <div class="grid-secondyr">
-    <h3>Year 2 - 7 Modules</h3><br />
-    Animation (<em>15 Credits</em>)<br />
-Media and Economy (<em>15 Credits</em>)<br />
-Media and Politics (<em>15 Credits</em>)<br />
-Radio Packages (<em>15 Credits</em>)<br />
-Theorising Popular Culture (<em>15 Credits)</em><br />
-Web Design and Development (<em>15 Credits</em>)<br />
-Media, Identity and Difference (<em>30 Credits</em>)
-  </div>
-  <div class="grid-thirdyr">
-    <h3>Year 3 - 7 Modules</h3><br />
-
-Creative Publishing (<em>15 Credits</em>)<br />
-Contemporary TV (<em>15 Credits</em>)<br />
-Media, Law, Culture and Technology (<em>15 Credits</em>)<br />
-Media and Philosophy (<em>15 Credits</em>)<br />
-Independent Radio Practice (<em>15 Credits</em>)<br />
-Sound and Vision: Music and Media (<em>15 Credits</em>)<br />
-Undergraduate Major Project - Dissertation (<em>30 Credits</em>)
-  </div>
-  <div class="grid-edu-college">
-  <h2><i class="fas fa-graduation-cap"></i><em>Creative Media Production</em> Level 3 BTEC - <em>Distinction, Distinction, Merit</em><br /><small>City of Oxford College</small></h2>
-  <h3><i class="fas fa-calendar-alt"></i>September 2012 - July 2014</h3>
-   </div>
-   <div class="grid-cfirst">
-     Pre-Production Techniques for the Creative Media Industries (<em>5 Credits</em>)<br />
-Communication Skills for Creative Media Production (<em>5 Credits</em>)<br />
-Research Techniques for the Creative Media Industries (<em>10 Credits</em>)<br />
-Creative Media Production Management Project (<em>10 Credits</em>)<br />
-Working to a Brief in the Creative Media Industries (<em>10 Credits</em>)
-   </div>
-   <div class="grid-csecond">
-     
-Critical Approaches To Creative Media Products (<em>10 Credits</em>)<br />
-Film and Video Editing Techniques (<em>10 Credits</em>)<br />
-Audio Production Processes and Techniques (<em>10 Credits</em>)<br />
-Digital Graphics for Interactive Media (<em>10 Credits</em>)<br />
-Single Camera Techniques (<em>10 Credits</em>)<br />
-Music Video Production (<em>10 Credits</em>)
-
-   </div>
-   <div class="grid-cthird">
-     
-Social Action and Community Media Production (<em>10 Credits</em>)<br />
-Page Layout and Design (<em>10 Credits</em>)<br />
-Graphic Narrative Production (<em>10 Credits</em>)<br />
-DVD Menu Design and Authoring (<em>10 Credits</em>)<br />
-Web Authoring (<em>10 Credits</em>)<br />
-Digital Video Production for Interactive Media (<em>10 Credits</em>)<br />
-Web Animation for Interactive Media (<em>10 Credits</em>)
-
-   </div>
-  </div>
-  <div class="grid-foot">
-  <h1>Contact me</h1>
-  <h4><a href="https://www.linkedin.com/in/corin-kearney/" target="_blank" class="contactlinks">Connect with me on LinkedIn</a> <i class="fab fa-linkedin"></i></h4>
-  <h4><a href="mailto:corin.kearney95@gmail.com" class="contactlinks">Drop me a line via email</a> <i class="far fa-envelope"></i> </h4>
-  <h4 class="contactlinks">Give me a bell in the UK: +44 7530 138 666 or in AUS: +61 426 675 943 <i class="far fa-bell"></i></h4>
-  </div>
-</div>
-<div id="projects" class="modalA">
-  <!-- Modal content -->
- <div class="modal-content">
-  <div class="modal-header">
-    <span class="close-btnA"><a href="#">&times;</a></span>
-    <h1>Projects</h1>
-    <h2>[project name]</h2>
- 
-    <p>I pride myself on being multiskilled, kind of a jack of all trades, and I try to incorporate this into both my career and personal projects. Creating this website is one of my most recent projects so I can keep up to speed on coding, and I enjoy the problem solving aspect of it.</p>
-    
-
-
-  </div>
-  </div>
-</div>
-
-<div id="achievementsAndQualifications" class="modal">
-  <!-- Modal content -->
- <div class="modal-content">
-  <div class="modal-header">
-    <span class="close-btn"><a href="#">&times;</a></span>
-    <h1>Achievements and Qualifications</h1>
-    <h2>Salesforce Marketing Cloud Email Specialist</h2>
-    <img src="Salesforce_Marketing_Cloud_Email_Specialist_sml.jpg" class="modal-img" alt="Marketing Cloud Email Specialist certificate">
-    <p>I have used Marketing Cloud for a number of years, and I wanted to formally show my skills by taking the Email Specialist exam. This certification shows I can use the basics in email marketing along with some of the more advanced features such as Journey Builder and Automation Studio. </p>
-    
-    <h2>Salesforce Pardot Email Specialist</h2>
-    <img src="Salesforce_Pardot_Specialist_sml.jpg" class="modal-img" alt="Pardot Email Specialist certificate">
-    <p>I have used Pardot for just over a year and I have also been an admin for most of that time. This certification covered the basics in email marketing along with advanced features such as Engagement Studio, automation rules and custom redirects. However, it did not cover some of the admin features that I used day to day. </p>
-
-    <h2>Code First: Girls - Beginners HTML and CSS web development course</h2>
-    <img src="Code_first_girls_award_sml.jpg" class="modal-img" alt="Code First: Girls certificate">
-    <p>I applied for this course to improve my skills in web development, and won a place in the course as it would benefit my skill set in my job at the time. I had learnt these skills in college and university but I was still a bit rusty, and lacked best practice knowledge to build a fully functioning website with the correct markup. The course taught me the skills required to make a website such as this, which I found invaluable. </p>
-
-  </div>
-  </div>
-</div>
-
-</div>
-</body>
-<script type="text/javascript" src="script.js"></script>
-</html>
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    border-top: 5px solid #BDD4DE;
+    border-bottom: 5px solid #BDD4DE;
+    color: #FF530D;
+}
