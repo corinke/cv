@@ -63,6 +63,7 @@
  background-color: #fff;
  text-align: center;
  padding-bottom: 10px;
+ padding-top: 10px;
 }
 .grid-csecond{
  grid-column: 2;
@@ -70,6 +71,7 @@
  background-color: #fff;
  text-align: center;
  padding-bottom: 10px;
+ padding-top: 10px;
 }
 .grid-cthird{
  grid-column: 3;
@@ -77,6 +79,7 @@
  background-color: #fff;
  text-align: center;
  padding-bottom: 10px;
+ padding-top: 10px;
 }
 
 @media only screen and (max-width: 600px)   {
