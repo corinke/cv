@@ -1,3 +1,96 @@
+/*icons and text */
+
+.fas, .fab{
+ font-size: 1.5em;
+ color: #2B3A42;
+ text-align: left;
+ padding-right: 10px;
+}
+.fa-calendar-alt{
+color: #FF530D;
+
+}
+h1{
+font-family: 'Raleway', Sans-Serif;
+color: #FF530D;
+text-align: center;
+font-weight: bold;
+}
+
+h2{
+font-family: 'Raleway', Sans-Serif;
+color: #2B3A42;
+font-weight: bold;
+font-size: 1.4em;
+}
+
+h3{
+  font-family: 'Lato', Sans-Serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #FF530D;
+  padding-left: 5px;
+}
+
+h4{
+   font-family: 'Lato', Sans-Serif;
+  font-size: 1em;
+  color: #FF530D;
+}
+
+p{
+  font-family: 'Lato', Sans-Serif;
+  color: #2B3A42;
+  font-size: 1em;
+}
+
+
+
+.deets{
+  font-family: 'Lato', Sans-Serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #FF530D;
+  text-align: center;
+
+}
+
+.title{
+font-family: 'Raleway', Sans-Serif;
+color: #3F5765;
+text-align: center;
+font-weight: bold;
+font-size: 2em;
+
+}
+
+hr{
+width: 80%;
+margin-top: 20px;
+border-top-color: #BDD4DE;
+background-color: rgba(250, 250, 250, 0.9);
+
+}
+
+.skill-list{
+padding: 15px 0px 8px 25px;
+text-align: left;
+
+}
+
+.prof {
+text-align: center;
+}
+
+.link{
+ color: #FF530D;
+text-decoration: none;
+}
+.contactlinks{
+  color: #333;
+  text-decoration: none;
+}
+
 /*grid styling */
 .grid-head{ 
   grid-area: header; 
@@ -175,7 +268,7 @@ padding: 1em 4em 2em 4em;
 padding: 1em;
  } 
  h2{
-  font-size: 1em;
+  font-size: 1.2em;
  }
 }
 /* extra small screens */
@@ -199,7 +292,7 @@ max-width: 85%;
 
   }
    h2{
-  font-size: 1em;
+  font-size: 1.2em;
  }
 
 }
@@ -224,98 +317,6 @@ padding-left: 10px;
 
 
 
-/*icons and text */
-
-.fas, .fab{
- font-size: 1.5em;
- color: #2B3A42;
- text-align: left;
- padding-right: 10px;
-}
-.fa-calendar-alt{
-color: #FF530D;
-
-}
-h1{
-font-family: 'Raleway', Sans-Serif;
-color: #FF530D;
-text-align: center;
-font-weight: bold;
-}
-
-h2{
-font-family: 'Raleway', Sans-Serif;
-color: #2B3A42;
-font-weight: bold;
-font-size: 1.4em;
-}
-
-h3{
-  font-family: 'Lato', Sans-Serif;
-  font-size: 1em;
-  font-weight: lighter;
-  color: #FF530D;
-  padding-left: 5px;
-}
-
-h4{
-   font-family: 'Lato', Sans-Serif;
-  font-size: 1em;
-  color: #FF530D;
-}
-
-p{
-  font-family: 'Lato', Sans-Serif;
-  color: #2B3A42;
-  font-size: 1em;
-}
-
-
-
-.deets{
-  font-family: 'Lato', Sans-Serif;
-  font-size: 1em;
-  font-weight: lighter;
-  color: #FF530D;
-  text-align: center;
-
-}
-
-.title{
-font-family: 'Raleway', Sans-Serif;
-color: #3F5765;
-text-align: center;
-font-weight: bold;
-font-size: 2em;
-
-}
-
-hr{
-width: 80%;
-margin-top: 20px;
-border-top-color: #BDD4DE;
-background-color: rgba(250, 250, 250, 0.9);
-
-}
-
-.skill-list{
-padding: 15px 0px 8px 25px;
-text-align: left;
-
-}
-
-.prof {
-text-align: center;
-}
-
-.link{
- color: #FF530D;
-text-decoration: none;
-}
-.contactlinks{
-  color: #333;
-  text-decoration: none;
-}
 
 /*navigation bar */
 
