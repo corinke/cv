@@ -87,8 +87,11 @@ text-align: center;
 text-decoration: none;
 }
 .contactlinks{
-  color: #333;
   text-decoration: none;
+  font-family: 'Lato', Sans-Serif;
+  color: #FF530D;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 /*grid styling */
