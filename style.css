@@ -174,6 +174,9 @@ padding: 1em 4em 2em 4em;
  .wrapper{
 padding: 1em;
  } 
+ h2{
+  font-size: 1em;
+ }
 }
 /* extra small screens */
 @media only screen and (max-width: 330px)   {
@@ -195,6 +198,10 @@ max-width: 93%;
 max-width: 85%;
 
   }
+   h2{
+  font-size: 1em;
+ }
+
 }
 
 .grid-container > div {
@@ -279,6 +286,7 @@ font-family: 'Raleway', Sans-Serif;
 color: #3F5765;
 text-align: center;
 font-weight: bold;
+font-size: 1em;
 
 }
 
