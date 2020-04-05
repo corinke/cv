@@ -131,6 +131,10 @@ text-decoration: none;
   grid-column: 1 / 4;
   grid-row: 3;
 }
+.grid-edu-sch{
+  grid-column: 1 / 4;
+  grid-row: 5;
+}
 
 .grid-firstyr{
  grid-column: 1;
@@ -178,6 +182,31 @@ text-decoration: none;
  padding-top: 10px;
 }
 
+.grid-sfirst{
+ grid-column: 1;
+ grid-row: 6;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.grid-ssecond{
+ grid-column: 2;
+ grid-row: 6;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+.grid-sthird{
+ grid-column: 3;
+ grid-row: 6;
+ background-color: #fff;
+ text-align: center;
+ padding-bottom: 10px;
+ padding-top: 10px;
+}
+
 @media only screen and (max-width: 600px)   {
   .grid-firstyr{
 grid-column: 1/4;
@@ -203,13 +232,29 @@ grid-row: 6;
   grid-column: 1/4;
   grid-row: 8;
 }
-  .grid-edu-content{
+  .grid-sfirst{
+grid-column: 1/4;
+grid-row: 10;
+  }
+.grid-ssecond{
+  grid-column: 1/4;
+  grid-row: 11;
+}
+.grid-sthird{
+  grid-column: 1/4;
+  grid-row: 12;
+}
+ .grid-edu-content{
   grid-column: 1 / 4;
   grid-row: 1;
 }
 .grid-edu-college{
   grid-column: 1 / 4;
   grid-row: 5;
+}
+.grid-edu-sch{
+  grid-column: 1 / 4;
+  grid-row: 9;
 }
 }
 
